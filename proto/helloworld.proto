@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package helloWorld;
+option go_package = "/proto";
+
+service Greeter{
+  //unary RPC
+  rpc SayHello(HelloRequest) returns (HelloResponse){}
+  //server side stream RPC
+  rpc SayList(HelloRequest) returns (HelloResponse){}
+
+}
+message HelloRequest{
+  string name = 1;
+
+}
+message HelloResponse{
+  string message = 1;
+}
