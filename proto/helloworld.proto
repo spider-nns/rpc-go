@@ -7,8 +7,9 @@ service Greeter{
   //unary RPC
   rpc SayHello(HelloRequest) returns (HelloResponse){}
   //server side stream RPC
-  rpc SayList(HelloRequest) returns (HelloResponse){}
-
+  rpc SayList(HelloRequest) returns (stream HelloResponse){}
+  //client side stream RPC
+  rpc SayRecord(stream helloWorld.HelloRequest) returns (helloWorld.HelloResponse){}
 }
 message HelloRequest{
   string name = 1;

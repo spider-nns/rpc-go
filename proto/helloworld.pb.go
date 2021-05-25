@@ -128,17 +128,21 @@ var file_proto_helloworld_proto_rawDesc = []byte{
 	0x28, 0x09, 0x52, 0x04, 0x6e, 0x61, 0x6d, 0x65, 0x22, 0x29, 0x0a, 0x0d, 0x48, 0x65, 0x6c, 0x6c,
 	0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x18, 0x0a, 0x07, 0x6d, 0x65, 0x73,
 	0x73, 0x61, 0x67, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x07, 0x6d, 0x65, 0x73, 0x73,
-	0x61, 0x67, 0x65, 0x32, 0x8e, 0x01, 0x0a, 0x07, 0x47, 0x72, 0x65, 0x65, 0x74, 0x65, 0x72, 0x12,
+	0x61, 0x67, 0x65, 0x32, 0xd6, 0x01, 0x0a, 0x07, 0x47, 0x72, 0x65, 0x65, 0x74, 0x65, 0x72, 0x12,
 	0x41, 0x0a, 0x08, 0x53, 0x61, 0x79, 0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x12, 0x18, 0x2e, 0x68, 0x65,
 	0x6c, 0x6c, 0x6f, 0x57, 0x6f, 0x72, 0x6c, 0x64, 0x2e, 0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x52, 0x65,
 	0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x19, 0x2e, 0x68, 0x65, 0x6c, 0x6c, 0x6f, 0x57, 0x6f, 0x72,
 	0x6c, 0x64, 0x2e, 0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
-	0x22, 0x00, 0x12, 0x40, 0x0a, 0x07, 0x53, 0x61, 0x79, 0x4c, 0x69, 0x73, 0x74, 0x12, 0x18, 0x2e,
+	0x22, 0x00, 0x12, 0x42, 0x0a, 0x07, 0x53, 0x61, 0x79, 0x4c, 0x69, 0x73, 0x74, 0x12, 0x18, 0x2e,
 	0x68, 0x65, 0x6c, 0x6c, 0x6f, 0x57, 0x6f, 0x72, 0x6c, 0x64, 0x2e, 0x48, 0x65, 0x6c, 0x6c, 0x6f,
 	0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x19, 0x2e, 0x68, 0x65, 0x6c, 0x6c, 0x6f, 0x57,
 	0x6f, 0x72, 0x6c, 0x64, 0x2e, 0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e,
-	0x73, 0x65, 0x22, 0x00, 0x42, 0x08, 0x5a, 0x06, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x06,
-	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x73, 0x65, 0x22, 0x00, 0x30, 0x01, 0x12, 0x44, 0x0a, 0x09, 0x53, 0x61, 0x79, 0x52, 0x65, 0x63,
+	0x6f, 0x72, 0x64, 0x12, 0x18, 0x2e, 0x68, 0x65, 0x6c, 0x6c, 0x6f, 0x57, 0x6f, 0x72, 0x6c, 0x64,
+	0x2e, 0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x19, 0x2e,
+	0x68, 0x65, 0x6c, 0x6c, 0x6f, 0x57, 0x6f, 0x72, 0x6c, 0x64, 0x2e, 0x48, 0x65, 0x6c, 0x6c, 0x6f,
+	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x28, 0x01, 0x42, 0x08, 0x5a, 0x06,
+	0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -161,10 +165,12 @@ var file_proto_helloworld_proto_goTypes = []interface{}{
 var file_proto_helloworld_proto_depIdxs = []int32{
 	0, // 0: helloWorld.Greeter.SayHello:input_type -> helloWorld.HelloRequest
 	0, // 1: helloWorld.Greeter.SayList:input_type -> helloWorld.HelloRequest
-	1, // 2: helloWorld.Greeter.SayHello:output_type -> helloWorld.HelloResponse
-	1, // 3: helloWorld.Greeter.SayList:output_type -> helloWorld.HelloResponse
-	2, // [2:4] is the sub-list for method output_type
-	0, // [0:2] is the sub-list for method input_type
+	0, // 2: helloWorld.Greeter.SayRecord:input_type -> helloWorld.HelloRequest
+	1, // 3: helloWorld.Greeter.SayHello:output_type -> helloWorld.HelloResponse
+	1, // 4: helloWorld.Greeter.SayList:output_type -> helloWorld.HelloResponse
+	1, // 5: helloWorld.Greeter.SayRecord:output_type -> helloWorld.HelloResponse
+	3, // [3:6] is the sub-list for method output_type
+	0, // [0:3] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
@@ -236,7 +242,9 @@ type GreeterClient interface {
 	//unary RPC
 	SayHello(ctx context.Context, in *HelloRequest, opts ...grpc.CallOption) (*HelloResponse, error)
 	//server side stream RPC
-	SayList(ctx context.Context, in *HelloRequest, opts ...grpc.CallOption) (*HelloResponse, error)
+	SayList(ctx context.Context, in *HelloRequest, opts ...grpc.CallOption) (Greeter_SayListClient, error)
+	//client side stream RPC
+	SayRecord(ctx context.Context, opts ...grpc.CallOption) (Greeter_SayRecordClient, error)
 }
 
 type greeterClient struct {
@@ -256,13 +264,70 @@ func (c *greeterClient) SayHello(ctx context.Context, in *HelloRequest, opts ...
 	return out, nil
 }
 
-func (c *greeterClient) SayList(ctx context.Context, in *HelloRequest, opts ...grpc.CallOption) (*HelloResponse, error) {
-	out := new(HelloResponse)
-	err := c.cc.Invoke(ctx, "/helloWorld.Greeter/SayList", in, out, opts...)
+func (c *greeterClient) SayList(ctx context.Context, in *HelloRequest, opts ...grpc.CallOption) (Greeter_SayListClient, error) {
+	stream, err := c.cc.NewStream(ctx, &_Greeter_serviceDesc.Streams[0], "/helloWorld.Greeter/SayList", opts...)
 	if err != nil {
 		return nil, err
 	}
-	return out, nil
+	x := &greeterSayListClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type Greeter_SayListClient interface {
+	Recv() (*HelloResponse, error)
+	grpc.ClientStream
+}
+
+type greeterSayListClient struct {
+	grpc.ClientStream
+}
+
+func (x *greeterSayListClient) Recv() (*HelloResponse, error) {
+	m := new(HelloResponse)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+func (c *greeterClient) SayRecord(ctx context.Context, opts ...grpc.CallOption) (Greeter_SayRecordClient, error) {
+	stream, err := c.cc.NewStream(ctx, &_Greeter_serviceDesc.Streams[1], "/helloWorld.Greeter/SayRecord", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &greeterSayRecordClient{stream}
+	return x, nil
+}
+
+type Greeter_SayRecordClient interface {
+	Send(*HelloRequest) error
+	CloseAndRecv() (*HelloResponse, error)
+	grpc.ClientStream
+}
+
+type greeterSayRecordClient struct {
+	grpc.ClientStream
+}
+
+func (x *greeterSayRecordClient) Send(m *HelloRequest) error {
+	return x.ClientStream.SendMsg(m)
+}
+
+func (x *greeterSayRecordClient) CloseAndRecv() (*HelloResponse, error) {
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	m := new(HelloResponse)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
 }
 
 // GreeterServer is the server API for Greeter service.
@@ -270,7 +335,9 @@ type GreeterServer interface {
 	//unary RPC
 	SayHello(context.Context, *HelloRequest) (*HelloResponse, error)
 	//server side stream RPC
-	SayList(context.Context, *HelloRequest) (*HelloResponse, error)
+	SayList(*HelloRequest, Greeter_SayListServer) error
+	//client side stream RPC
+	SayRecord(Greeter_SayRecordServer) error
 }
 
 // UnimplementedGreeterServer can be embedded to have forward compatible implementations.
@@ -280,8 +347,11 @@ type UnimplementedGreeterServer struct {
 func (*UnimplementedGreeterServer) SayHello(context.Context, *HelloRequest) (*HelloResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SayHello not implemented")
 }
-func (*UnimplementedGreeterServer) SayList(context.Context, *HelloRequest) (*HelloResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method SayList not implemented")
+func (*UnimplementedGreeterServer) SayList(*HelloRequest, Greeter_SayListServer) error {
+	return status.Errorf(codes.Unimplemented, "method SayList not implemented")
+}
+func (*UnimplementedGreeterServer) SayRecord(Greeter_SayRecordServer) error {
+	return status.Errorf(codes.Unimplemented, "method SayRecord not implemented")
 }
 
 func RegisterGreeterServer(s *grpc.Server, srv GreeterServer) {
@@ -306,22 +376,51 @@ func _Greeter_SayHello_Handler(srv interface{}, ctx context.Context, dec func(in
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Greeter_SayList_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(HelloRequest)
-	if err := dec(in); err != nil {
+func _Greeter_SayList_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(HelloRequest)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(GreeterServer).SayList(m, &greeterSayListServer{stream})
+}
+
+type Greeter_SayListServer interface {
+	Send(*HelloResponse) error
+	grpc.ServerStream
+}
+
+type greeterSayListServer struct {
+	grpc.ServerStream
+}
+
+func (x *greeterSayListServer) Send(m *HelloResponse) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+func _Greeter_SayRecord_Handler(srv interface{}, stream grpc.ServerStream) error {
+	return srv.(GreeterServer).SayRecord(&greeterSayRecordServer{stream})
+}
+
+type Greeter_SayRecordServer interface {
+	SendAndClose(*HelloResponse) error
+	Recv() (*HelloRequest, error)
+	grpc.ServerStream
+}
+
+type greeterSayRecordServer struct {
+	grpc.ServerStream
+}
+
+func (x *greeterSayRecordServer) SendAndClose(m *HelloResponse) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+func (x *greeterSayRecordServer) Recv() (*HelloRequest, error) {
+	m := new(HelloRequest)
+	if err := x.ServerStream.RecvMsg(m); err != nil {
 		return nil, err
 	}
-	if interceptor == nil {
-		return srv.(GreeterServer).SayList(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: "/helloWorld.Greeter/SayList",
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(GreeterServer).SayList(ctx, req.(*HelloRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	return m, nil
 }
 
 var _Greeter_serviceDesc = grpc.ServiceDesc{
@@ -332,11 +431,18 @@ var _Greeter_serviceDesc = grpc.ServiceDesc{
 			MethodName: "SayHello",
 			Handler:    _Greeter_SayHello_Handler,
 		},
+	},
+	Streams: []grpc.StreamDesc{
 		{
-			MethodName: "SayList",
-			Handler:    _Greeter_SayList_Handler,
+			StreamName:    "SayList",
+			Handler:       _Greeter_SayList_Handler,
+			ServerStreams: true,
+		},
+		{
+			StreamName:    "SayRecord",
+			Handler:       _Greeter_SayRecord_Handler,
+			ClientStreams: true,
 		},
 	},
-	Streams:  []grpc.StreamDesc{},
 	Metadata: "proto/helloworld.proto",
 }
